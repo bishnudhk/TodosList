@@ -1,0 +1,125 @@
+.input{
+    display: flex;
+    width: 90%;
+    /* button want to inside into input */
+    position: relative;  
+    align-items: center;
+}
+
+.inputBox{
+    width: 100%;
+    border-radius: 50px;
+    padding: 20px 30px;
+    font-size: 25px;
+    border: none;
+    transition: 0.2s;
+    box-shadow: inset 0 0 5px black;
+}
+
+/* whole screen get dark when click it  */
+.inputBox:focus{
+    box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+.inputSubmit{
+    /*we want to inside of a input  */
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 12px;
+    border-radius: 50px;
+    font-size: 15px;
+    right: 0px;
+    border: none;
+    font-size: 15px;
+    background-color: aqua;
+    color: aliceblue;
+    transition: 0 0.2s all;
+    box-shadow: 0 0 10px black;
+}
+.inputSubmit:hover{
+    background-color: blue;
+}
+.inputSubmit:active{
+    transform: scale(0.8);
+    box-shadow: 0 0 5px black;
+}
+.todos{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    flex-wrap: wrap;
+}
+.todoSingle{
+    display: flex;
+    
+    width: 40%;
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 12px;
+    background-color: rgb(9, 13, 124);
+    transition: 0.2sec;
+}
+.todoSingle:hover{
+    box-shadow: 0 0 15px red;
+}
+
+.todoSingleText{
+    flex :1;
+    padding: 5px;
+}
+
+.container{
+    display: flex;
+    width: 60.5%;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.todos{
+    
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: aquamarine;
+
+
+}
+.todosHeading{
+    font-size: 18px;
+    color: aliceblue;
+}
+.icon{
+    
+    margin-left: 18px;
+    
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.remove{
+    background-color: red;
+}
+@media (max-width:700px) {
+    .input{
+        
+            width: 95%;
+    }
+    .todos{
+        width: 95%;
+        margin-bottom: 10px;
+    }
+    .todoSingle{
+        width: 100%;
+    }
+
+  .container{
+    width: 95%;
+    flex-direction: column;
+  }
+}
